@@ -1,0 +1,20 @@
+---
+name: projects
+url: /projects
+title: Projects
+controller: ProjectsController
+---
+<div class="grid-container">
+  <h1>These are my personal projects</h1>
+  <p class="lead">See how cool they all are!</p>
+
+  <div masonry masonry-options="{ transitionDuration: '0s' }">
+    <div ui-sref="project.destination" class="masonry-brick md-card md-card-1" ng-class="bg-{{event.color}}" ng-repeat="project in projects">
+      <img ng-src="{{ project.url }}" alt="A project of mine">
+      <h4>{{project.destination}}</h4>
+    </div>
+  </div>
+</div>
+
+
+

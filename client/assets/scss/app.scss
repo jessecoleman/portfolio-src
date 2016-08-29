@@ -1,0 +1,141 @@
+@import "settings";
+@import "foundation";
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500i,900';
+
+body {
+  background: #F5F5F5;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu-bar .page-top {
+  height: 400px;
+}
+
+.title {
+  padding: 96px 48px;
+}
+
+.masonry-brick {
+	width: 46%;
+  margin: 2%;
+}
+
+.md-card {
+  
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+}
+
+.md-card-1 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.md-card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#timeline::before {
+  /* this is the vertical line */
+  left: 50%;
+  margin-left: -2px;
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: #B0BEC5;
+}
+
+.timeline-block {
+  position: relative;
+  margin: 4em 0;
+  display: block;
+}
+
+.timeline-block:first-child {
+  margin-top: 0;
+}
+
+.timeline-content {
+  padding: 12px;
+  width: 45%;
+  text-align: right;
+}
+
+.timeline-date {
+  position: absolute;
+  top: 0;
+  margin-left: 50%;
+  padding: 16px 64px;
+  width: 50%;
+  text-align: left;
+  color: #9E9E9E;
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+.timeline-block:nth-child(even) .timeline-date {
+  margin-left: 0;
+  margin-right: 50%;
+  text-align: right;
+  width: 50%;
+}
+
+.timeline-block:nth-child(even) .timeline-content {
+    margin-left: auto;
+    text-align: left;
+  }
+
+.tl-icon {
+	fill: white;
+	padding: 12px;
+  width: 24px; 
+  height: 24px;
+}
+
+
+.timeline-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -24px;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #F44336;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.bg-red {
+  background-color: #E57373;
+}
+
+.bg-purple {
+  background-color: #9575CD;
+}
+
+.bg-green {
+  background-color: #AED581;
+}
+
+.bg-blue {
+  background-color: #7986CB;
+}
+
+.bg-yellow {
+  background-color: #FFD54F;
+}
+
+.bg-orange {
+  background-color: #FFB74D;
+}
