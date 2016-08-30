@@ -9,10 +9,14 @@ controller: ProjectsController
   <p class="lead">See how cool they all are!</p>
 
   <div masonry masonry-options="{ transitionDuration: '0s' }">
-    <div ui-sref="project.destination" class="masonry-brick md-card md-card-1" ng-class="bg-{{event.color}}" ng-repeat="project in projects">
+    <md-card class="masonry-brick md-card-image" ng-click="showProject($event)" ng-repeat="project in projects">
       <img ng-src="{{ project.url }}" alt="A project of mine">
-      <h4>{{project.destination}}</h4>
-    </div>
+      <md-card-content>
+      	<h2>{{project.destination}}</h2>
+      </md-card-content>
+      <md-card-footer>
+      </md-card-footer>
+    </md-card>
   </div>
 </div>
 

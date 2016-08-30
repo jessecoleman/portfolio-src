@@ -16,11 +16,10 @@ controller: HomeController
 				<image src="../assets/images/{{event.icon}}.svg"/>
 			</div> <!-- cd-timeline-img -->
 	 
-			<div class="timeline-content md-card md-card-1">
-				<h2>{{event.title}}</h2>
+			<md-card class="timeline-content">
+				<md-card-header>{{event.title}}</md-card-header>
 				<p>{{event.description}}</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-			</div> <!-- cd-timeline-content -->
+			</md-card> <!-- cd-timeline-content -->
 			<div class="timeline-date">{{event.date}}</div>
 		</div> <!-- cd-timeline-block -->
 	</section>

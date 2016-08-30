@@ -26,8 +26,9 @@ var paths = {
   ],
   // Sass will check these folders for files when you use @import.
   sass: [
-    'client/assets/scss',
-    'bower_components/foundation-apps/scss'
+    'bower_components/foundation-apps/scss',
+    'bower_components/angular-material',
+    'client/assets/scss'
   ],
   // These files include Foundation for Apps and its dependencies
   foundationJS: [
@@ -39,12 +40,12 @@ var paths = {
     'bower_components/jquery-bridget/jquery-bridget.js',
     'bower_components/get-size/get-size.js',
     'bower_components/angular/angular.js',
-    'bower_components/angular-animate/angular-animate.js',
     'bower_components/angular-ui-router/release/angular-ui-router.js',
-    'bower_components/angular-sanitize/angular-sanitize.js',
+    'bower_components/angular-aria/angular-aria.js',
+    'bower_components/angular-animate/angular-animate.js', 
     'bower_components/foundation-apps/js/vendor/**/*.js',
     'bower_components/foundation-apps/js/angular/**/*.js',
-    '!bower_components/foundation-apps/js/angular/app.js'
+    'bower_components/foundation-apps/js/angular/app.js'
   ],
   // These files are for your app's JavaScript
   appJS: [
@@ -56,6 +57,8 @@ var paths = {
     'bower_components/masonry/masonry.js',
     'bower_components/imagesloaded/imagesloaded.js',
     'bower_components/angular-masonry/angular-masonry.js',
+    'bower_components/angular-material/angular-material.js',
+    'bower_components/angular-messages/angular-messages.js',
     'client/assets/js/app.js'
   ]
 }

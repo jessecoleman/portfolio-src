@@ -10,16 +10,27 @@
     <script src="./assets/js/routes.js"></script>
     <script src="./assets/js/app.js"></script>
   </head>
-  <body>
-    <div class="grid-frame vertical">
-      <div class="grid-content shrink" style="padding: 0;">
-        <ul class="primary condense menu-bar" ng-class="{'.scroll-top': scrollPos == 0}">
-          <li><a ui-sref="home"><strong>Jesse Chamberlin</strong></a></li>
-          <li><a ui-sref="projects">Projects</a></li>
-        </ul>
+  <body layout="column" layout-fill ng-cloak >
+  <md-toolbar md-tall md-scroll-shrink ng-if="true">
+    <div class="md-toolbar-tools">
+      <span>Jesse Chamberlin</span>
       </div>
-      <div ui-view class="grid-content">
-      </div>
-    </div>
+      <!--
+    <md-tabs md-selected="currentTab" class="md-primary">
+      
+        <md-tab id="tab1" ui-sref="home" aria-controls="Tab 2">
+            <md-tab-label>Jesse Chamberlin</md-tab-label>
+        </md-tab>
+        <md-tab id="tab2" ui-sref="projects" aria-controls="Tab 2">
+            <md-tab-label>Projects</md-tab-label>
+        </md-tab>
+        <md-tab id="tab3" ui-sref="contact" aria-controls="Tab 3">
+            <md-tab-label>Contact</md-tab-label>
+        </md-tab>
+    </md-tabs>
+    -->
+  </md-toolbar>
+  <md-content ui-view flex>
+  </md-content>
   </body>
 </html>

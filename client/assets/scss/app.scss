@@ -1,19 +1,19 @@
 @import "settings";
 @import "foundation";
+@import "angular-material";
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500i,900';
 
 body {
   background: #F5F5F5;
-  text-align: center;
   font-family: 'Roboto', sans-serif;
-}
-
-.menu-bar .page-top {
-  height: 400px;
 }
 
 .title {
   padding: 96px 48px;
+}
+
+.toolbar-spacer {
+  margin-top: 48px;
 }
 
 .masonry-brick {
@@ -21,20 +21,16 @@ body {
   margin: 2%;
 }
 
-.md-card {
-  
-  background: #fff;
-  border-radius: 4px;
-  border: none;
+md-dialog-container {
+  align-items: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: none;
 }
 
-.md-card-1 {
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-.md-card-1:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+md-dialog.project-dialog {
+  max-height: none;
 }
 
 #timeline {
